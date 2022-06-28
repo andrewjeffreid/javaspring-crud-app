@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type= "text/javascript" src="js/script.js" ></script>
+    <title>Frontend</title>
+</head>
+<body>
+    <h1>Create Read Update Delete App</h1>
+
+    <!-- GET -->
+    <h2>get users</h2>
+    <div>
+        <button text="submit" onClick="getUsers()">GET</button>
+    </div>
+
+    <p id="users"></p>
+
+    <!-- POST -->
+    <h2>post user</h2>
+    <div>
+        <input type="text" placeholder="firstName" id="firstName">
+        <input type="text" placeholder="lastName" id="lastName">
+        <input type="number" placeholder="age" id="age">
+        <input type="text" placeholder="occupation" id="occupation">
+        <button text="submit" onClick="postUser()">POST</button>
+    </div>
+
+    <!-- PUT -->
+    <h2>update user</h2>
+    <div>
+        <input type="number" placeholder="id" id="id">
+        <!-- BUG: had to update id's here bc was using same as above -->
+        <input type="text" placeholder="firstName" id="updateFirstName">
+        <input type="text" placeholder="lastName" id="updateLastName">
+        <input type="number" placeholder="age" id="updateAge">
+        <input type="text" placeholder="occupation" id="updateOccupation">
+        <button text="submit" onClick="putUser()">POST</button>
+    </div>
+
+    <!-- DELETE -->
+    <h2>delete</h2>
+    <div>
+        <input type="number" placeholder="id" id="deleteId">
+        <button text="submit" onClick="deleteUser()">DELETE</button>
+    </div>
+    
+</body>
+</html>
